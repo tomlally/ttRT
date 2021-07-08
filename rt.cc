@@ -13,7 +13,8 @@ F r,V c={1,1,1},F f=0,F e=0):o(o),r(r),c(c),f(f),e(e){}I t(V p,V d,V&h,V&n){V z=
 ,0}},{{127,0,0},125,{0,1,0}},{{0,-127,0},121},{{0,-2,2},.6f,{0.8,0.75,0.45},0,1.2}};V t(V
 p,V d,I i=0,O*f=0){if(i>4)R{};O*x=0;V l,m,h,n;for(O&o:o)if(&o-f&&o.t(p,!d,l,m))if(!x||~(l
 -p)<~(h-p))x=&o,h=l,n=m;if(x){F a=6*r(),b=r(),c=sqrt(b);V u=!((fabs(n.x)>.1?V{0,1,0}:V{1,
-0,0})%n),r=!(u*cos(a)*c+n%u*sin(a)*c+n*sqrt(1-b));R (x->c*x->e)+(x->c*t(h,r,i+1,x)*r.d(n)
-*(1-x->f)*2)+(x->f>.01?(x->c*t(h,d-n*2*n.d(d),i+1,x)):V{})*x->f;}R{};}I main(){puts("P3 "
-"512 512 255");for(I y=512;y--;)for(I x=512;x--;){V c={};for (I s=256;s--;)c=c+t({},V{(x+
-r()-256),-256,(y+r()-256)}/256)/256;printf("%d %d %d ",p(c.x),p(c.y),p(c.z));}}
+0,0})%n),r=!(u*cos(a)*c+n%u*sin(a)*c+n*sqrt(1-b));R(x->c*x->e)+(x->c*t(h,r,i+1,x)*r.d(n)*
+(1-x->f)*2)+(x->f>.01?(x->c*t(h,d-n*2*n.d(d),i+1,x)):V{})*x->f;}R{};}I main(){puts("P3 5"
+"12 512 255");for(I y=512;y--;)for(I x=512;x--;){V c={};for(I s=256;s--;)c=c+t({},V{(x+r(
+)-256),-256,(y+r()-256)}/256)/256;printf("%d %d %d ",p(c.x),p(c.y),p(c.z));}}
+
